@@ -1,0 +1,150 @@
+.navbar {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    max-width: 1140px;
+    margin: auto;
+    z-index: 999;
+  }
+  
+.navbar__scrolled{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 10px;
+    max-width: 1140px;
+    margin: 20px auto;
+    z-index: 999;
+}
+
+  .navbar-items {
+    list-style-type: none;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navbar-item {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .navbar-item:not(:first-child):not(:last-child) {
+    min-width: 140px;
+  }
+  
+  
+  .toggle-button {
+    z-index: 999;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+
+  .navbar-item:not(:first-child):not(:last-child):hover {
+    background-color: rgb(44, 44, 44);
+  }
+  
+  .navbar-item:hover .toggle-button {
+    opacity: 1;
+    background-color: rgb(44, 44, 44);
+  }
+  
+
+.navbar-item .arrowicon{
+    display: inline-block;
+    transition: transform 0.3s;
+    margin-left: 5px; 
+}
+
+.navbar-item:hover .arrowicon{
+    transform: rotate(180deg);
+}
+
+.toggle-button-home{
+    width: 150px;
+}
+
+.toggle-button-home li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.toggle-button-store{
+    width: 150px;
+}
+
+.toggle-button-store li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.toggle-button-categories{
+    width: 700px;
+    display: flex;
+}
+
+.toggle-button-categories li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.toggle-button-categories-genres{
+    flex-basis: 60%;
+    display: flex;
+}
+
+.toggle-button-categories-genres div{
+    margin-top: 5px;
+    flex-basis: 50%;
+}
+
+.toggle-button-categories-featured{
+    flex-basis: 40%;
+    display: flex;
+}
+
+.toggle-button-categories-featured span{
+    width: 100%;
+    height: 100px;
+}
+
+.toggle-button-categories-featured div{
+    flex-basis: 50%;
+}
+
+.toggle-button-mystuff{
+    width: 150px;
+}
+
+.toggle-button-mystuff li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.toggle-button li:hover{
+    background-color: white;
+    color: black;
+}

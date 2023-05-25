@@ -1,0 +1,104 @@
+/* .row{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.rowcontainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.rowcard {
+  width: 190px;
+  height: 120px;
+  transition: all .5s;
+  box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.11),
+             -15px -15px 30px rgba(60, 60, 60, 0.082);
+  text-align: center;
+  overflow: hidden;
+}
+
+.rowcard:hover {
+  height: 254px;
+  background: linear-gradient(360deg, #edededc5 60%, hsla(0, 0%, 13%, 1) 70%);
+}
+
+.rowcard .rowheader {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #212121;
+  margin-bottom: 16px;
+}
+
+.rowcard .rowheader .rowimg-box {
+  width: 50px;
+}
+
+.rowcard .rowheader .title {
+  font-size: 1.1em;
+  letter-spacing: .1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 4px 0 14px 0;
+  transition: all .5s;
+  color: #edededc5;
+}
+
+.rowcard:hover .rowheader {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+}
+
+.rowcard:hover .card .rowheader .title {
+  padding: 0;
+}
+
+.rowcard .rowcontent {
+  display: block;
+  text-align: justify;
+  color: #212121;
+  margin: 0 18px;
+}
+
+.rowcard .content .rowcontentp{
+  transition: all .5s;
+  font-size: 1em;
+  margin-bottom: 8px;
+} */
+
+.row_container{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.row_container::-webkit-scrollbar{
+    display: none;
+}
+
+.row_poster{
+    object-fit: contain;
+    width: 100%;
+    max-height: 160px;
+    margin-right: 10px;
+    transition: transform 450ms;
+}
+
+.row_poster:hover{
+    transform: scale(1.1);
+}
+
+.row_posterLarge{
+    max-height: 420px;
+}
+
+.row_posterLarge:hover{
+    transform: scale(1.1);
+}
