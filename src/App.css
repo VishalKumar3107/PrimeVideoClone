@@ -1,0 +1,13 @@
+*{
+  margin: 0;
+  background-color: black;
+  /* overflow: hidden; */
+}
+
+.App {
+  text-align: left;
+}
+
+.Appblack{
+  background-color: black;
+}

@@ -1,0 +1,107 @@
+{movies.map(movie=>(
+<div className="rowcardm" key={movie.id} >
+    <div className="rowcard">
+        <img
+        className={`row_poster ${isLargeRow && "row_posterLarge"}`}
+        src={`${base_url}${isLargeRow ? movie.poster_path : movie.backdrop_path}`} 
+        alt={movie.title}/>
+    </div>
+  
+    <div className="rowcard2">
+      <div className="rowupper">
+        <div className="rowhumidity">
+          <div>{movie.title}</div>
+          <div>
+            <button>play</button>
+            <button>add</button>
+          </div>
+        </div>
+      </div>
+  
+      <div className="rowlower">
+        <div>{movie.release_date} <span>U/A {movie.vote_average}</span></div>
+        <div>{movie.overview}</div>
+      </div>
+    </div>
+  </div>
+  ))}
+
+
+
+  .rowcardm {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 46.64%;
+    left: 50%;
+  }
+  
+  .rowcard {
+    position: absolute;
+    width: 250px;
+    height: 130px;
+    border-radius: 25px;
+    background: whitesmoke;
+    color: black;
+    z-index: 2;
+    transition: .4s ease-in-out;
+  }
+  
+
+  .rowcard2 {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 240px;
+    height: 130px;
+    border-radius: 35px;
+    background: white;
+    z-index: -1;
+    transition: .4s ease-in-out;
+  }
+  
+  .rowcard:hover {
+    background-color: #FFE87C;
+    cursor: pointer;
+  }
+  
+  .rowcard:hover + .rowcard2 {
+    height: 300px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  
+  .rowcard:hover + .rowcard2 .rowlower {
+    top: 20.2em;
+  }
+  
+  .rowupper {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    color: black;
+    left: 1.8em;
+    top: 0.5em;
+    gap: 4em;
+  }
+  
+  
+  .rowlower {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    color: black;
+    left: 3em;
+    top: 1em;
+    margin-top: 0.7em;
+    font-size: 0.7em;
+    transition: .4s ease-in-out;
+  }
+  
+
+  .rowhumidity{
+    display: flex;
+    flex-direction:column;
+  }

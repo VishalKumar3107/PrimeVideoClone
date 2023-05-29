@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap');
+
+.Categorycomp{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+}
+
+.CategorycompH{
+  margin: 50px;
+  width: 90%;
+  text-align: left;
+  font-weight: 900;
+  font-size: 2.3em;
+  font-family: 'Exo', sans-serif;
+}
+
+.Categorycompouter{
+    color: white;
+    display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.Categorycompouter>div{
+    flex: 1 0 20%; /* Each inner div occupies 50% of the container width by default */
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 20px;
+  max-width: 300px;
+  height: 250px;
+  background-color: aqua;
+}
+
+.Categorycompcard {
+  width: 300px;
+  height: 250px;
+  border-radius: 20px;
+  background: #f5f5f5;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
+  background-position: top;
+ }
+ 
+ .Categorycompcard-details {
+  color: transparent;
+  /* height: 100%; */
+  gap: .5em;
+  display: grid;
+  place-content: center;
+ }
+ 
+ .Categorycompcard-button {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #008bf8;
+  color: #fff;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+ }
+ 
+ .Categorycomptext-body {
+  color: rgb(134, 134, 134);
+ }
+ 
+ /*Text*/
+ .Categorycomptext-title {
+  font-size: 1.5em;
+  font-weight: bold;
+ }
+ 
+ /*Hover*/
+ .Categorycompcard:hover {
+  border-color: #008bf8;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+ }
+ 
+ .Categorycompcard:hover .Categorycompcard-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+  cursor: pointer;
+ }
